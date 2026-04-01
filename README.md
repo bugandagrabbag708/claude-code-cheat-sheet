@@ -1,4 +1,4 @@
-# Claude Code Cheat Sheet — Commands, Shortcuts, Tips & Workflow Patterns
+# Claude Code Cheat Sheet - Commands, Shortcuts, Tips & Workflow Patterns
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-CLI-blueviolet)](https://docs.anthropic.com/en/docs/claude-code/overview)
 [![Last Updated](https://img.shields.io/badge/Updated-April_2026-green)](#)
@@ -16,13 +16,13 @@ The complete reference for [Claude Code](https://docs.anthropic.com/en/docs/clau
 - [Keyboard Shortcuts](#keyboard-shortcuts)
 - [Slash Commands](#slash-commands)
 - [CLI Flags](#cli-flags)
-- [CLAUDE.md — Project Instructions](#claudemd--project-instructions)
+- [CLAUDE.md - Project Instructions](#claudemd--project-instructions)
 - [Permission Modes](#permission-modes)
 - [Models and Effort Levels](#models-and-effort-levels)
 - [MCP Servers](#mcp-servers--extend-claude-code)
 - [Custom Skills](#custom-skills--your-own-slash-commands)
 - [Custom Subagents](#custom-subagents)
-- [Hooks — Automation Triggers](#hooks--automation-triggers)
+- [Hooks - Automation Triggers](#hooks--automation-triggers)
 - [Context Window Management](#context-window-management)
 - [Git Worktrees](#git-worktrees--parallel-work)
 - [Settings File Reference](#settings-file-reference)
@@ -92,7 +92,7 @@ These work inside the interactive Claude Code terminal.
 
 | Shortcut | Action |
 |----------|--------|
-| `\ + Enter` | New line (multiline input) — works on macOS, Linux, and Windows |
+| `\ + Enter` | New line (multiline input) - works on macOS, Linux, and Windows |
 | `Option+Enter` (Mac) / `Alt+Enter` (Linux/Win) | New line (platform default) |
 | `Shift+Enter` | New line (iTerm2, WezTerm, Ghostty, Kitty, Windows Terminal) |
 | `Ctrl+K` | Delete to end of line |
@@ -316,7 +316,7 @@ claude --append-system-prompt-file ./coding-rules.txt
 
 ---
 
-## CLAUDE.md — Project Instructions
+## CLAUDE.md - Project Instructions
 
 CLAUDE.md is the single most important file for customizing Claude Code behavior on a per-project basis. It loads automatically at the start of every session.
 
@@ -445,7 +445,7 @@ Effort levels control how much reasoning Claude applies:
 
 ---
 
-## MCP Servers — Extend Claude Code
+## MCP Servers - Extend Claude Code
 
 [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) lets Claude Code connect to external tools and data sources. Configure servers in `.mcp.json` at the project root or `~/.claude/.mcp.json` for all projects.
 
@@ -491,7 +491,7 @@ The `--mcp-config` flag is useful in CI/CD where you need consistent MCP server 
 
 ---
 
-## Custom Skills — Your Own Slash Commands
+## Custom Skills - Your Own Slash Commands
 
 Skills are reusable prompts that show up as slash commands. Create them at `.claude/skills/` (project) or `~/.claude/skills/` (personal).
 
@@ -567,7 +567,7 @@ claude --agents '{"qa": {"description": "QA tester", "prompt": "You are a QA eng
 
 ---
 
-## Hooks — Automation Triggers
+## Hooks - Automation Triggers
 
 Hooks run shell commands automatically in response to Claude Code events. Configure in `.claude/settings.json`:
 
@@ -627,7 +627,7 @@ Claude Code has a finite context window. Managing it well is the difference betw
 
 ---
 
-## Git Worktrees — Parallel Work
+## Git Worktrees - Parallel Work
 
 Work on multiple tasks simultaneously without branch switching conflicts:
 
@@ -781,7 +781,7 @@ The response is ephemeral (not saved to context), low-cost (uses cache), and doe
 
 ---
 
-## Prompting Tips — Get Better Results
+## Prompting Tips - Get Better Results
 
 The quality of Claude Code's output depends heavily on how you prompt it. These patterns consistently produce better results.
 
@@ -897,7 +897,7 @@ claude -p "check for linting errors" --model haiku
 
 ## Diagnostics
 
-### --debug — Verbose Logging
+### --debug - Verbose Logging
 
 When you need to see exactly what Claude Code is doing (API calls, tool invocations, timing):
 
@@ -914,7 +914,7 @@ claude --debug-file /tmp/claude-debug.log
 
 Useful when MCP servers are not connecting, hooks are not firing, or API calls are failing silently.
 
-### /doctor — Health Check
+### /doctor - Health Check
 
 Run `/doctor` when something is not working right. It checks:
 
@@ -925,7 +925,7 @@ Run `/doctor` when something is not working right. It checks:
 - MCP server health
 - Permission configuration
 
-### /insights — Session Analysis
+### /insights - Session Analysis
 
 Run `/insights` after a long session to get an analysis report covering:
 
@@ -1018,7 +1018,7 @@ git log v1.0.0..v2.0.0 --oneline | \
 
 ---
 
-## /loop — Recurring Tasks
+## /loop - Recurring Tasks
 
 The `/loop` slash command runs a prompt or another slash command on a repeating interval within your session:
 
